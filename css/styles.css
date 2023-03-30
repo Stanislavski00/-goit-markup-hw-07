@@ -1,52 +1,68 @@
-:roo
+:root{
+    --prymary-font: 'Roboto', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
+    --primary-text-color-theme-dark: #FFFFFF;
+    --primary-text-color-theme-light: #2E2F42;
+    --secondary-text-color-theme-dark: #F4F4FD;
+    --secondary-text-color-theme-light: #434455;
+    --accent-color :#404BBF;
 
+}
 
-.list{
+.list {
     list-style: none;
 }
 
-.link,.logotype{
+.link{
     text-decoration: none;
 }
+
+body {
+ font-family: var(--prymary-font);
+}
+
 /* ================== Components ================ */
+
+
 .menu-link {
-    font-family: 'Roboto', sans-serif;
     font-weight: 500;
+    font-family: var(--prymary-font);
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--primary-text-color-theme-light);
 }
 
 .menu-link:hover,
 .menu-link:focus {
-    color: #404BBF;
+    color:var(--accent-color);
 }
 
 .modal-btn {
-    font-family: 'Roboto', sans-serif;
     font-weight: 500;
+    font-family: var(--prymary-font);
     font-size: 16px;
-    line-height: 1.5x;
+    line-height: 1.5;
     cursor: pointer;
 }
 
 .modal-btn:hover,
 .modal-btn:focus {
     background-color: #4D5AE5;
-    color: #FFFFFF;
+    color: var(--primary-text-color-theme-dark);
 }
 
 
 .subtitle {
-    font-family: 'Roboto', sans-serif;
     font-weight: 700;
+    font-family: var(--prymary-font);
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    color: #2E2F42;
+    color: var(--primary-text-color-theme-light);
+
 }
 
 .subtitle-none {
@@ -54,56 +70,78 @@
 }
 
 .headline {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
     font-weight: 500;
+    font-family: var(--prymary-font);
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--primary-text-color-theme-light);
 }
 
 .section-description {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
     font-weight: 400;
+    font-family: var(--prymary-font);
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--secondary-text-color-theme-light);
 }
+
 /* ================== /Components ================ */
 
 
 /* ==================Site Header================ */
+.web{
+    font-family:var(--secondary-font);
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 1.16;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color:var(--accent-color);
+}
+
+.studio {
+    font-family:var(--secondary-font);
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 1.16;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color:var(--primary-text-color-theme-light)
+}
 
 .contact-phone-number {
-    font-family: 'Roboto', sans-serif;
+    font-family:var(--prymary-font);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color:var(--primary-text-color-theme-light)
 }
 
 
 .contact-phone-number:hover,
 .contact-phone-number:focus {
-    color: #404BBF
+    color: var(--accent-color)
 }
 
 .email-adress {
-    font-family: 'Roboto', sans-serif;
     font-weight: 400;
+    font-family: var(--prymary-font);
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--secondary-text-color-theme-light);
 }
 
 .email-adress:hover,
 .email-adress:focus {
-    color: #404BBF
+    color: var(--accent-color)
 }
 
 /* ==================/ Site Header================ */
@@ -111,11 +149,58 @@
 /* ================== Hero =================== */
 
 .main-title {
-    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
+    color:var(--primary-text-color-theme-dark)
 }
+
+
+.hero {
+    background-color: var(--primary-text-color-theme-light);
+}
+
 /* ==================/ Hero =================== */
+
+/* ================== Footer =================== */
+
+
+.footer-section-description {
+font-family: var(--prymary-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color-theme-dark);
+}
+
+.footer {
+    background-color: var(--primary-text-color-theme-light);
+    color:var(--secondary-text-color-theme-dark);
+}
+
+.web-logotype{
+        font-family: var(--secondary-font);
+    font-weight: 800;
+        font-size: 18px;
+        line-height: 1.16;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color:var(--accent-color)
+}
+
+.studio-logo{
+    font-weight: 800;
+    font-family: var(--secondary-font);
+        font-size: 18px;
+        line-height: 21px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--secondary-text-color-theme-dark);
+}
