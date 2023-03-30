@@ -67,7 +67,7 @@ font-weight: 500;
     color: #4D5AE5;
     cursor: pointer;
     letter-spacing: 0.04em;
-    background-color: var(--primary-text-color-theme-dark);
+    background-color:var(--secondary-text-color-theme-dark)
 }
 
 .btn:hover,
@@ -239,8 +239,6 @@ font-family: var(--prymary-font);
         color: var(--secondary-text-color-theme-dark);
 }
 
-.section-team{
-    background-color: var(--secondary-text-color-theme-dark);
-}
+
 
 
