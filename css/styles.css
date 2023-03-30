@@ -39,6 +39,7 @@ body {
 .menu-link:hover,
 .menu-link:focus {
     color:var(--accent-color);
+    background-color: #F4F4FD;
 }
 
 .modal-btn {
