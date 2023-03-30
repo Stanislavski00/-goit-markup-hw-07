@@ -58,6 +58,22 @@ body {
     background-color: var(--accent-color);
    
 }
+.btn{
+font-weight: 500;
+    font-family: var(--prymary-font);
+    font-size: 16px;
+    line-height: 1.5;
+    color: #4D5AE5;
+    cursor: pointer;
+    letter-spacing: 0.04em;
+    background-color: var(--primary-text-color-theme-dark);
+}
+
+.btn:hover,
+.btn:focus{
+    background-color: var(--accent-color);
+    color: var(--primary-text-color-theme-dark);
+}
 
 
 .subtitle {
@@ -102,7 +118,7 @@ address{
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
-        color: var(--primary-text-color-theme-light)
+        color: var(--primary-text-color-theme-light);
 }
 
 
@@ -128,7 +144,7 @@ address{
         align-items: center;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-        color:var(--primary-text-color-theme-light)
+        color:var(--primary-text-color-theme-light);
 }
 
 .contact-phone-number {
@@ -137,7 +153,7 @@ address{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color:var(--primary-text-color-theme-light)
+    color:var(--primary-text-color-theme-light);
 }
 
 
@@ -225,3 +241,5 @@ font-family: var(--prymary-font);
 .section-team{
     background-color: var(--secondary-text-color-theme-dark);
 }
+
+
