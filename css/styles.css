@@ -239,6 +239,14 @@ font-family: var(--prymary-font);
         color: var(--secondary-text-color-theme-dark);
 }
 
+.section-team
+{
+    background-color: var(--primary-text-color-theme-dark);
+    
+}
 
+.image{
+    background-color: var(--secondary-text-color-theme-dark);
+}
 
 
