@@ -175,7 +175,11 @@ address {
 
 .team{
     
-    background-color: #F4F4FD;
+    background-color: var(--secondary-text-color-theme-dark);
+}
+
+.team-item{
+    background-color: var(--primary-text-color-theme-dark);
 }
 
 
