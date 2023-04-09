@@ -142,12 +142,14 @@ body {
 
 }
 
-.button{
+.button-list{
     display: flex;
     justify-content: center;
+    
+
 }
 
-.button .item {
+.button-list .item {
     min-width: 69px;
     margin-right: 24px;
     margin-bottom: 72px;
@@ -358,11 +360,12 @@ border: 1px solid transparent;
             padding-bottom: 120px;
             margin-left: auto;
             margin-right: auto;
-            margin-right: 24px;
+            
 }
 
 .feature-list{
     display: flex;
+    margin-right: 24px;
 }
 
 .feature-list .item{
@@ -432,7 +435,7 @@ padding-bottom: 120px;
     
     background-color: var(--secondary-text-color-theme-dark);
     padding: 120px 0 120px;
-    padding: 32px 16px 32px;
+   
 }
 
 
@@ -445,7 +448,9 @@ padding-bottom: 120px;
    margin-right: 0;
 }
 
-
+.team .subtitle{
+    margin-bottom: 72px;
+}
 
 
 .team-list{
