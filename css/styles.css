@@ -145,7 +145,7 @@ body {
 .button-list{
     display: flex;
     justify-content: center;
-    
+    margin-bottom: 72px;
 
 }
 
@@ -536,7 +536,6 @@ flex-wrap: wrap;
 width: 1128px;
 margin-left: 0;
 margin-right: 24px;
-margin-bottom: 72px;
 }
 
 .image .img-link{
@@ -547,16 +546,21 @@ margin-bottom: 24px;
 margin-right: 24px;
 
 }
+
+.img-link{
+    margin-bottom: 72px;
+}
  
 .image .img-link:nth-child(3n+3){
     margin-right: 0;
 }
 
 .portfolio-container{
-    border-top: none;
+    
     padding: 32px 16px;
     border-radius: 0px 0px 4px 4px;
     border: 1px solid #e7e9fc;
+    border-top:none;
 }
 
 .portfolio-container .headline{
