@@ -368,6 +368,7 @@ border: 1px solid transparent;
 
 .feature-list{
     display: flex;
+    gap: 24px;
 }
 
 .feature-list .item{
@@ -525,33 +526,27 @@ margin-bottom: 8px;
 
 /* ================== Portfolio =================== */
 
-.portfolio{
+.portfolio {
     padding: 96px 0 120px;
-    border-top: none;
     
 }
 
 
-.image{
+.image-list{
 display: flex;
 flex-wrap: wrap;
 width: 1128px;
 margin-left: 0;
-margin-right: 24px;
-}
-
-.image .img-link{
-    display: flex;
-margin-left: 0;
-margin-right: 24px;
-
+margin-bottom: 72px;
+row-gap: 48px;
 }
 
 .img-link{
-    margin-bottom: 72px;
+    row-gap: 48px;
+    margin-right: 24px;
 }
  
-.image .img-link:nth-child(3n+3){
+.img-link:nth-child(3n+3){
     margin-right: 0;
 }
 
@@ -560,6 +555,7 @@ margin-right: 24px;
     padding: 32px 16px;
     border-radius: 0px 0px 4px 4px;
     border: 1px solid #e7e9fc;
+    border-top: none;
     
 }
 
