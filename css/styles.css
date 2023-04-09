@@ -539,14 +539,10 @@ width: 1128px;
 margin-left: 0;
 margin-bottom: 72px;
 row-gap: 48px;
-margin-right: 24px;
+column-gap: 24px;
 }
 
-.img-link{
-    row-gap: 48px;
-    margin-right: 24px;
 
-}
  
 .img-link:nth-child(3n+3){
     margin-right: 0;
