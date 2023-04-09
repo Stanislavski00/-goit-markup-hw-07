@@ -113,7 +113,7 @@ body {
 
 .modal-btn {
             display: block;
-    display: inline-block;
+    
     height: 56px;
             align-items: flex-start;
             border: none;
@@ -327,12 +327,15 @@ border: 1px solid transparent;
 
 
 .hero {
-    display: block;
+    
     background-color: var(--primary-text-color-theme-light);
     text-align: center;
     padding-top: 188px;
     padding-bottom: 188px;
 }
+
+
+
 
 /* ==================/ Hero =================== */
 
@@ -355,6 +358,11 @@ border: 1px solid transparent;
             padding-bottom: 120px;
             margin-left: auto;
             margin-right: auto;
+            margin-right: 24px;
+}
+
+.feature-list{
+    display: flex;
 }
 
 .feature-list .item{
@@ -362,7 +370,6 @@ border: 1px solid transparent;
 width: calc((100% - 72px) / 4);
     margin-left:0;
 margin-right: 24px;
-
 
 }
 
@@ -400,6 +407,7 @@ padding-bottom: 120px;
 .img-link{
     display: flex;
         display: inline-block;
+        width: calc((100% - 48px) / 3);
 }
 
 
@@ -408,7 +416,7 @@ padding-bottom: 120px;
     display: inline-block ;
     display: flex;
     margin-bottom: 120px;
-    width: calc((100% - 48px) / 3);
+    
     margin-right: 24px;
 }
 
@@ -423,8 +431,8 @@ padding-bottom: 120px;
 .team{
     
     background-color: var(--secondary-text-color-theme-dark);
-    
-    padding: 32px 16px;
+    padding: 120px 0 120px;
+    padding: 32px 16px 32px;
 }
 
 
@@ -438,9 +446,6 @@ padding-bottom: 120px;
 }
 
 
-.team .subtitle {
-    margin-bottom: 72px;
-}
 
 
 .team-list{
@@ -457,7 +462,8 @@ padding-bottom: 120px;
         padding-right: 16px;
         border-radius: 0px 0px 4px 4px;
         text-align: center; 
-         
+         padding-top: 32px;
+         padding-bottom: 32px;
 }
 
 .team-container .headline{
@@ -514,7 +520,7 @@ margin-bottom: 8px;
 
 .portfolio{
     padding: 96px 0 120px;
-    margin-bottom: 72px;
+    
     
 }
 
@@ -524,14 +530,16 @@ display: flex;
 flex-wrap: wrap;
 width: 1128px;
 margin-left: 0;
-
+margin-right: 24px;
+margin-bottom: 72px;
 }
 
 .image .img-link{
     display: flex;
 margin-left: 0;
+margin-right: 0;
+margin-bottom: 24px;
 margin-right: 24px;
-margin-bottom: 24px
 
 }
  
@@ -540,6 +548,7 @@ margin-bottom: 24px
 }
 
 .portfolio-container{
+    border-top: none;
     padding: 32px 16px;
     border-radius: 0px 0px 4px 4px;
     border: 1px solid #e7e9fc;
