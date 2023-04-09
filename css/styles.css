@@ -152,11 +152,14 @@ body {
 .button-list .item {
     min-width: 69px;
     margin-right: 24px;
-    margin-bottom: 72px;
+    
     
     
 }
 
+.button-list .item:last-child{
+margin-right: 0;
+}
 
 .btn {
     display: inline-block;
@@ -365,7 +368,6 @@ border: 1px solid transparent;
 
 .feature-list{
     display: flex;
-    margin-right: 24px;
 }
 
 .feature-list .item{
@@ -525,7 +527,7 @@ margin-bottom: 8px;
 
 .portfolio{
     padding: 96px 0 120px;
-    
+    border-top: none;
     
 }
 
@@ -541,8 +543,6 @@ margin-right: 24px;
 .image .img-link{
     display: flex;
 margin-left: 0;
-margin-right: 0;
-margin-bottom: 24px;
 margin-right: 24px;
 
 }
@@ -560,12 +560,13 @@ margin-right: 24px;
     padding: 32px 16px;
     border-radius: 0px 0px 4px 4px;
     border: 1px solid #e7e9fc;
-    border-top:none;
+    
 }
 
 .portfolio-container .headline{
     text-align: center;
     margin-bottom: 8px;
+
 }
 
 .portfolio-container .section-description{
