@@ -42,11 +42,11 @@ img {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    align-items: center;
 }
 
 .navigate {
     display: flex;
+    align-items: center;
 }
 
 .visually-hidden {
@@ -77,7 +77,6 @@ img {
 
 
 .list {
-    background-color: var(--primary-text-color-theme-dark);
     list-style: none;
 }
 
@@ -95,6 +94,7 @@ body {
 /* ================== Components ================ */
 
 .menu-link {
+    display: block;
     padding-top: 24px;
     padding-bottom: 24px;
     font-weight: 500;
@@ -232,12 +232,11 @@ border: 1px solid transparent;
 
 
 .address {
-    font-style: normal;
-    padding-top: 24px;
-    margin-bottom: 24px;
     margin-left: auto;
-    margin-right: auto;
+    font-style: normal;
 }
+
+
 
 .address-list{
     display: flex;
@@ -272,17 +271,10 @@ border: 1px solid transparent;
 
 .menu{
     display: flex;
-    min-width: 261px;
-    padding-top: 24px;
-    margin-bottom: 24px;
-    margin-right: 332px;
+   
 }
 
-.address{
-    display: flex;
-    min-width: 151px;
 
-}
 
 .address .item:not(:last-child){
     margin-right: 40px;
@@ -358,11 +350,8 @@ border: 1px solid transparent;
 /* ================== feature  =================== */
 
 .feature-section{
-    display: flex;
         padding-top: 120px;
             padding-bottom: 120px;
-            margin-left: auto;
-            margin-right: auto;
             
 }
 
@@ -405,25 +394,16 @@ margin-right: 0;
 }
 
 .work{
-  display: flex;
-  flex-wrap: wrap;
 padding-bottom: 120px;
 }
 
 .img-link{
-    display: flex;
-        display: inline-block;
         width: calc((100% - 48px) / 3);
 }
 
 
 .img-list {
-    display:flex;
-    display: inline-block ;
     display: flex;
-    margin-bottom: 120px;
-    
-    margin-right: 24px;
 }
 
 /* ==================/our work/ =================== */
@@ -445,6 +425,7 @@ padding-bottom: 120px;
 .team .item{
     margin-right: 24px;
     min-width: 264px;
+    background-color: var(--primary-text-color-theme-dark);
 }
 
 .item:last-child{
@@ -460,7 +441,6 @@ padding-bottom: 120px;
     display: inline-block;
     display: flex;
         justify-content: center;
-    margin-bottom: 72px;
         
 }
 
@@ -507,7 +487,6 @@ margin-bottom: 8px;
     display: inline-block;
     margin-bottom: 16px;
     padding: 0px;
-    width: 44px;
     font-family: var(--secondary-font);
     font-weight: 800;
     font-size: 18px;
@@ -535,9 +514,6 @@ margin-bottom: 8px;
 .image-list{
 display: flex;
 flex-wrap: wrap;
-width: 1128px;
-margin-left: 0;
-margin-bottom: 72px;
 row-gap: 48px;
 column-gap: 24px;
 }
@@ -558,14 +534,12 @@ column-gap: 24px;
 }
 
 .portfolio-container .headline{
-    text-align: center;
+   
     margin-bottom: 8px;
 
 }
 
-.portfolio-container .section-description{
-    text-align: center;
-}
+
 
 
 /* ================== /Portfolio/ =================== */
