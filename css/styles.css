@@ -114,7 +114,6 @@ body {
 
 .modal-btn {
             display: block;
-    
     height: 56px;
             align-items: flex-start;
             border: none;
@@ -187,6 +186,7 @@ margin-right: 0;
     background-color: var(--accent-color);
     color: var(--primary-text-color-theme-dark);
 border: 1px solid transparent;
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 
 }
 
@@ -229,6 +229,7 @@ border: 1px solid transparent;
 /* ==================Site Header================ */
 .header{
     border-bottom: 1px solid #E7E9FC;
+    box-shadow: зі значенням 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 
@@ -311,6 +312,7 @@ border: 1px solid transparent;
 /* ================== Hero =================== */
 
 .main-title {
+    padding-top: 188px;
     max-width: 496px;
     margin-left: auto;
     margin-right: auto;
@@ -320,19 +322,13 @@ border: 1px solid transparent;
     line-height: 1.07;
     letter-spacing: 0.02em;
     color: var(--primary-text-color-theme-dark);
-}
-
-
-
-.hero {
     text-align: center;
-    padding-top: 188px;
-    padding-bottom: 188px;
 }
+
 
 .hero-background{
     max-width: 1440px;
-    height:600px;;
+    height:600px;
         margin-left: auto;
         margin-right: auto;
         background-image:linear-gradient(to right,
@@ -369,6 +365,8 @@ border: 1px solid transparent;
             
 }
 
+
+
 .feature-list{
     display: flex;
     gap: 24px;
@@ -399,6 +397,12 @@ margin-right: 0;
         background: var(--secondary-text-color-theme-dark);
         border-radius: 4px;
         background-position: center;
+}
+
+.feature-container{
+    display: flex;
+        align-items: center;
+        justify-content: center;
 }
 
 .icon-container{
@@ -492,6 +496,14 @@ margin-bottom: 8px;
     margin-bottom: 8px;
 }
 
+.social-link-list{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 24px;
+}
+
 .social-link-item{
     padding: 12px;
     border: none;
@@ -500,17 +512,9 @@ margin-bottom: 8px;
     height: 40px;
     background-color:var(--secondary-accent-color);
     border-radius: 30px;
-    text-align: center;
 }
 
-.social-link-list{
-    display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 0px;
-        gap: 24px;
-}
+
 
 
 
@@ -564,23 +568,22 @@ margin-bottom: 72px;
 }
 
 .footer {
-    gap: 24px;
-    display: flex;
     background-color: var(--primary-text-color-theme-light);
     color: var(--secondary-text-color-theme-dark);
     padding-top: 100px;
     padding-bottom: 100px;
+   
 }
 
-.footer-container{
-    display: block;
-    margin: 0 auto;
+.footer .container {
+    display: flex;
+    gap: 120px;
 }
 
-.social-link{
-    display: block;
-    margin: 0 auto;
+.footer-logo-container{
+    width: 264px;
 }
+
 
 .web-logotype {
     display: inline-block;
@@ -601,18 +604,9 @@ margin-bottom: 72px;
     width: 71px;
 }
 
-.social-link .subtitle{
-        margin-bottom: 16px;
-        color: #FFFFFF;
-        font-family: var(--prymary-font);
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 24px;
-        letter-spacing: 0.02em;
-                }
-
-.social-link-item {
+.soc-link-item {
+    width: 208px;
+   margin-right: 16px;
     padding: 8px;
     border: none;
     display: inline-block;
@@ -620,7 +614,18 @@ margin-bottom: 72px;
     height: 40px;
     background-color: var(--secondary-accent-color);
     border-radius: 30px;
-    text-align: center;
+}
+
+.soc-link-item:last-child{
+    margin-right: 0;
+}
+
+.social-media{
+    color: var(--primary-text-color-theme-dark);
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 
@@ -639,6 +644,16 @@ flex-wrap: wrap;
 row-gap: 48px;
 column-gap: 24px;
 }
+
+.image-list a{
+    display: block;
+}
+
+.image-list a:hover,
+.image-list a:focus{
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 
 
  
@@ -665,6 +680,7 @@ column-gap: 24px;
     margin-bottom: 8px;
 
 }
+
 
 
 
