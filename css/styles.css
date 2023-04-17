@@ -227,9 +227,9 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px
 
 
 /* ==================Site Header================ */
-.header{
+header{
+box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
     border-bottom: 1px solid #E7E9FC;
-    box-shadow: зі значенням 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 
@@ -331,10 +331,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px
     height:600px;
         margin-left: auto;
         margin-right: auto;
-        background-image:linear-gradient(to right,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)),
-         url(../images/heroimage/hero-picture.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/heroimage/hero-picture.jpg);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
@@ -473,15 +470,15 @@ padding-bottom: 120px;
     display: inline-block;
     display: flex;
         justify-content: center;
-        
+}
+
+.team-list .item{
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
 }
 
 
 .team-container{
-    padding-left: 16px;
-        padding-right: 16px;
-        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-        border-radius: 0px 0px 4px 4px;
         text-align: center; 
          padding-top: 32px;
          padding-bottom: 32px;
@@ -505,14 +502,24 @@ margin-bottom: 8px;
 }
 
 .social-link-item{
-    padding: 12px;
-    border: none;
-    display: inline-block;
     width: 40px;
     height: 40px;
-    background-color:var(--secondary-accent-color);
-    border-radius: 30px;
 }
+
+.social-link{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-accent-color);
+    border-radius: 50%
+    }
+
+    .social-link:hover,
+    .social-link:focus{
+        background-color: #404bbf;
+    }
 
 
 
@@ -539,6 +546,9 @@ line-height: 1.1;
     margin-right: auto;
     margin-left: auto;
     gap: 24px;
+    width: calc((100% - 120px) / 6);
+    height: 88px;
+    justify-content: center;
 }
 
 
@@ -636,7 +646,7 @@ line-height: 1.1;
     margin-right: 0;
 }
 
-.social-media{
+.social-footer{
     color: var(--primary-text-color-theme-dark);
     margin-bottom: 16px;
     font-weight: 500;
