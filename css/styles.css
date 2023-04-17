@@ -657,6 +657,7 @@ width: calc((100% - 120px) / 6);
     height: 100%;
     background-color: var(--secondary-accent-color);
     border-radius: 50%;
+    fill: #F4F4FD;
 }
 
 .social-link-footer:hover,
