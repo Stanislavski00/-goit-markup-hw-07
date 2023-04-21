@@ -73,7 +73,7 @@ img {
     --accent-color: #404BBF;
     --secondary-accent-color: #4D5AE5;
     --foter-accent-color: #31d0aa;
-
+    --anim-standart: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -96,6 +96,7 @@ body {
 /* ================== Components ================ */
 
 .menu-link {
+    position: relative;
     display: block;
     padding-top: 24px;
     padding-bottom: 24px;
@@ -105,12 +106,29 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--primary-text-color-theme-light);
+    transition: color var(--anim-standart), background-color var(--anim-standart);
 }
 
 .menu-link:hover,
 .menu-link:focus {
     color: var(--accent-color);
+}
 
+.menu-link::after{
+content: "";
+position: absolute;
+left: 0;
+bottom: 0;
+    width: 100%;
+    height: 4px;
+    display: block;
+    border-radius: 2px;
+}
+
+.menu-link.current::after,
+.menu-link:hover::after,
+.menu-link:focus::after{
+background-color: var(--accent-color);
 }
 
 .modal-btn {
@@ -132,6 +150,7 @@ body {
             cursor: pointer;
             letter-spacing: 0.04em;
             flex-direction: row;
+            transition: color var(--anim-standart), background-color var(--anim-standart);
 
 }
 
@@ -178,6 +197,7 @@ margin-right: 0;
     border-radius: 4px;
     background-color: var(--secondary-text-color-theme-dark);
     border: 1px solid #E7E9FC;
+    transition: color var(--anim-standart), background-color var(--anim-standart);
     
 }
 
@@ -279,6 +299,7 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 
 
 
+
 .address .item:not(:last-child){
     margin-right: 40px;
 }
@@ -300,6 +321,7 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--secondary-text-color-theme-light);
+    transition: color var(--anim-standart),
 }
 
 .address-link:hover,
@@ -429,6 +451,7 @@ padding-bottom: 120px;
 
 .img-link{
         width: calc((100% - 48px) / 3);
+        
 }
 
 
@@ -515,7 +538,8 @@ margin-bottom: 8px;
     justify-content: center;
     align-items: center;
     background-color: var(--secondary-accent-color);
-    border-radius: 50%
+    border-radius: 50%;
+    transition: background-color var(--anim-standart);
     }
 
     .social-link:hover,
@@ -562,6 +586,7 @@ line-height: 1.1;
     align-items: center;
     justify-content: center;
     color:#8e8f99;
+    transition: color var(--anim-standart), border-color var(--anim-standart);
 }
 
 .customers-link:hover,
@@ -658,6 +683,7 @@ width: calc((100% - 120px) / 6);
     background-color: var(--secondary-accent-color);
     border-radius: 50%;
     fill: #F4F4FD;
+    transition: background-color var(--anim-standart);
 }
 
 .social-link-footer:hover,
@@ -685,6 +711,7 @@ width: calc((100% - 120px) / 6);
 
 
 .image-list{
+
 display: flex;
 flex-wrap: wrap;
 row-gap: 48px;
@@ -693,6 +720,7 @@ column-gap: 24px;
 
 .image-list a{
     display: block;
+    transition: box-shadow var(--anim-standart);
 }
 
 .image-list a:hover,
@@ -700,6 +728,9 @@ column-gap: 24px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
+.image-list:hover .overlay{
+    transform: translateY(0%);
+}
 
 
  
@@ -713,6 +744,7 @@ column-gap: 24px;
     border-radius: 0px 0px 4px 4px;
     border: 1px solid #e7e9fc;
     border-top: none;
+    transition: box-shadow var(--anim-standart);
     
 }
 
@@ -722,9 +754,41 @@ column-gap: 24px;
 }
 
 .portfolio-container .headline{
-   
     margin-bottom: 8px;
+}
 
+.portfolio-box{
+position: relative;
+overflow: hidden;
+}
+
+
+.overlay{
+    position: absolute;
+    transform: translateY(100%);
+    width: 360px;
+        height: 300px;
+        left: 0px;
+        top: 0px;
+        background: var(--secondary-accent-color);
+        transition: transform var(--anim-standart);
+
+}
+
+
+.overlay-lable{
+    text-align: center;
+    padding-right: 32px;
+    padding-left: 32px;
+    padding-top: 40px;
+    margin-bottom:164px;
+    font-family: var(--prymary-font);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: var(--secondary-text-color-theme-dark);
 }
 
 
