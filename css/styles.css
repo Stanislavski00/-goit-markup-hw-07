@@ -36,6 +36,7 @@ img {
     display: block;
 }
 
+    
 .container{
     width: 1158px;
     padding-left: 15px;
@@ -106,7 +107,7 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--primary-text-color-theme-light);
-    transition: color var(--anim-standart), background-color var(--anim-standart);
+    transition: color var(--anim-standart);
 }
 
 .menu-link:hover,
@@ -123,6 +124,7 @@ bottom: 0;
     height: 4px;
     display: block;
     border-radius: 2px;
+    transition: background-color var(--anim-standart);
 }
 
 .menu-link.current::after,
@@ -149,15 +151,13 @@ background-color: var(--accent-color);
             background-color: var(--secondary-accent-color);
             cursor: pointer;
             letter-spacing: 0.04em;
-            flex-direction: row;
-            transition: color var(--anim-standart), background-color var(--anim-standart);
+            transition: background-color var(--anim-standart);
 
 }
 
 
 .modal-btn:hover,
 .modal-btn:focus {
-    color: var(--primary-text-color-theme-dark);
     background-color: var(--accent-color);
 
 }
@@ -182,7 +182,6 @@ margin-right: 0;
 }
 
 .btn {
-    display: inline-block;
     text-align: center;
     border-radius: 4px;
     padding: 12px 24px;
@@ -197,7 +196,7 @@ margin-right: 0;
     border-radius: 4px;
     background-color: var(--secondary-text-color-theme-dark);
     border: 1px solid #E7E9FC;
-    transition: color var(--anim-standart), background-color var(--anim-standart);
+    transition: color var(--anim-standart), background-color var(--anim-standart), border var(--anim-standart), box-shadow var(--anim-standart);
     
 }
 
@@ -250,7 +249,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px
 /* ==================Site Header================ */
 header{
 box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-    border-bottom: 1px solid #E7E9FC;
+    
 }
 
 
@@ -410,11 +409,7 @@ margin-right: 0;
 }
 
 .feature-icon{
-    display: flex;
-    padding: 24px 100px;
-    width: 264px;
-        height: 112px;
-        background-position: center;
+ 
 }
 
 
@@ -423,6 +418,7 @@ margin-right: 0;
     display: flex;
         align-items: center;
         justify-content: center;
+        height: 112px;
         background-color: var(--secondary-text-color-theme-dark);
         border-radius: 4px;
     }
@@ -779,7 +775,6 @@ overflow: hidden;
 
 
 .overlay-lable{
-    text-align: center;
     padding-right: 32px;
     padding-left: 32px;
     padding-top: 40px;
