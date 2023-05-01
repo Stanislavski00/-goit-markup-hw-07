@@ -1003,6 +1003,7 @@ textarea {
     position: absolute;
     top: 50%;
     left: 16px;
+    fill: var(--primary-text-color-theme-light);
     transform: translateY(-50%);
     pointer-events: none;
     transition: var(--anim-standart);
@@ -1047,7 +1048,6 @@ textarea {
     align-items: center;
     gap: 8px;
     margin-bottom: 24px;
-    justify-content: center;
 }
 
 .modal-form-check-privacy-text {
