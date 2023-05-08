@@ -94,7 +94,7 @@
 
       <!-- Feature -->
 
-      <!-- <section class="feature-section list">
+      <section class="feature-section list">
         <div class="feature-container container">
           <h2 class="visually-hidden">Feature</h2>
           <ul class="feature-list list">
@@ -151,55 +151,71 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Ourwork -->
 
-      <!-- <section class="work list">
+      <section class="work list">
         <div class="container">
           <h2 class="subtitle">What are we doing</h2>
           <ul class="img-list list">
             <li class="img-link list">
               <img
+                srcset="
+                  ./images/ourwork/imgone.jpg,
+                  ./images/ourwork/imgone-2x.jpg
+                "
                 class="img-item link"
                 src="./images/ourwork/imgone.jpg"
                 alt="what we do"
                 width="360"
                 height="300"
+                loading="lazy"
               />
             </li>
 
             <li class="img-link list">
               <img
+                srcset="
+                  ./images/ourwork/imgtwo.jpg,
+                  ./images/ourwork/imgtwo-2x.jpg
+                "
                 class="img-item link"
                 src="./images/ourwork/imgtwo.jpg"
                 alt="what we do"
                 width="360"
                 height="300"
+                loading="lazy"
               />
             </li>
 
             <li class="img-link list">
               <img
+                srcset="
+                  ./images/ourwork/imgthree.jpg,
+                  ./images/ourwork/imgthree-2x.jpg
+                "
                 class="img-item link"
                 src="./images/ourwork/imgthree.jpg"
                 alt="what we do"
                 width="360"
                 height="300"
+                loading="lazy"
               />
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Ourteam -->
 
-      <!-- <section class="team list">
+      <section class="team">
         <div class="container">
           <h2 class="subtitle">Our Team</h2>
           <ul class="team-list list">
             <li class="item">
               <img
+                srcset="./images/staff/foto1-2x.jpg"
                 src="./images/staff/foto1.jpg"
                 alt="staff photo"
                 width="264"
@@ -263,6 +279,7 @@
 
             <li class="item">
               <img
+                srcset="./images/staff/foto2-2x.jpg"
                 src="./images/staff/foto2.jpg"
                 alt="staff photo"
                 width="264"
@@ -326,6 +343,7 @@
 
             <li class="item">
               <img
+                srcset="./images/staff/foto3-2x.jpg"
                 src="./images/staff/foto3.jpg"
                 alt="staff photo"
                 width="264"
@@ -389,6 +407,7 @@
 
             <li class="item">
               <img
+                srcset="./images/staff/foto4-2x.jpg"
                 src="./images/staff/foto4.jpg"
                 alt="staff photo"
                 width="264"
@@ -451,9 +470,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
-      <!-- <section class="customers list">
+      <!-- customers list -->
+
+      <section class="customers">
         <div class="customers-container container">
           <h2 class="subtitle">Customers</h2>
           <ul class="customers-list list">
@@ -501,15 +522,15 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
     <!-- Footer -->
-    <!-- <footer class="footer-container">
-      <div class="container">
+    <footer class="footer">
+      <div class="container footer-container">
         <div class="footer-logo-container">
           <a class="web-logotype link" href="./index.html"
-            >Web<span class="studio-logo">Studio</span>
-          </a>
+            >Web<span class="footer-logo-two">Studio</span></a
+          >
           <p class="footer-section-description">
             Increase the flow of customers and sales for your business with
             digital marketing & growth solutions.
@@ -518,11 +539,13 @@
         <div class="social-container">
           <p class="social-footer">Social media</p>
           <ul class="social-list-footer list">
-            <li class="soc-link-item">
+            <li class="soc-link-item-foot">
               <a
-                href="https://www.instagram.com/"
-                rel="noopener noreferer"
-                class="social-link-footer"
+                class="social-link-foot link"
+                href="https://instagram.com"
+                target="_blank"
+                rel="nooperer noreferrer"
+                aria-label="Instagram icon"
               >
                 <svg class="social-network" width="24" height="24">
                   <use
@@ -532,33 +555,39 @@
                 </svg>
               </a>
             </li>
-            <li class="soc-link-item">
+            <li class="soc-link-item-foot">
               <a
-                href="https://twitter.com/"
-                rel="noopener noreferer"
-                class="social-link-footer"
+                class="social-link-foot link"
+                href="https://twitter.com"
+                target="_blank"
+                rel="nooperer noreferrer"
+                aria-label="Twitter icon"
               >
                 <svg class="social-network" width="24" height="24">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="soc-link-item">
+            <li class="soc-link-item-foot">
               <a
-                href="https://www.facebook.com/"
-                rel="noopener noreferer"
-                class="social-link-footer"
+                class="social-link-foot link"
+                href="https://facebook.com"
+                target="_blank"
+                rel="nooperer noreferrer"
+                aria-label="Facebook icon"
               >
                 <svg class="social-network" width="24" height="24">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="soc-link-item">
+            <li class="soc-link-item-foot">
               <a
-                href="https://www.linkedin.com/"
-                rel="noopener noreferer"
-                class="social-link-footer"
+                class="social-link-foot link"
+                href="https://linkedin.com"
+                target="_blank"
+                rel="nooperer noreferrer"
+                aria-label="Linkedin icon"
               >
                 <svg class="social-network" width="24" height="24">
                   <use href="./images/icons.svg#icon-linkedin"></use>
@@ -567,26 +596,26 @@
             </li>
           </ul>
         </div>
-        <div class="foter-form-container">
-          <p class="title-form-footer">Subscribe</p>
-          <form class="footer-form" name="footer_form">
+        <div class="form">
+          <p class="social-footer">Subscribe</p>
+          <form class="form-footer">
             <input
-              class="email-input-container"
               type="email"
               name="user_email"
-              id="user-email"
               placeholder="E-mail"
+              class="footer-email"
+              required
+              minlength="2"
             />
-
-            <button type="submit" class="submit-btn-footer">
-              Subscribe<svg class="footer-form-icon" width="24" height="20">
+            <button type="submit" class="footer-btn">
+              Subscribe<svg class="footer-form-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send-btn"></use>
               </svg>
             </button>
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <!-- Modal window -->
 
@@ -679,73 +708,80 @@
           <use href="./images/icons.svg#icon-close-btn-modal"></use>
         </svg>
       </button>
-
-      <ul class="mobile-menu-list">
-        <li class="mobile-menu">
-          <a href="./index.html" class="link current">Studio</a>
-        </li>
-        <li class="mobile-menu">
-          <a href="./portfolio.html" class="link">Portfolio</a>
-        </li>
-        <li class="mobile-menu">
-          <a href="" class="link">Contacts</a>
-        </li>
-      </ul>
-      <ul class="mobile-contacts">
-        <li class="mobile-contacts-item">
-          <a href="tel:+110001111111">+11 (000) 111-11-11</a>
-        </li>
-        <li class="mobile-contacts-item">
-          <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-        </li>
-      </ul>
-
-      <ul class="mobile-social-list list">
-        <li class="soc-link-item">
-          <a
-            href="https://www.instagram.com/"
-            rel="noopener noreferer"
-            class="mobile-social-link"
-          >
-            <svg class="social-network" width="24" height="24">
-              <use class="icon" href="./images/icons.svg#icon-instagram"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="soc-link-item">
-          <a
-            href="https://twitter.com/"
-            rel="noopener noreferer"
-            class="mobile-social-link"
-          >
-            <svg class="social-network" width="24" height="24">
-              <use href="./images/icons.svg#icon-twitter"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="soc-link-item">
-          <a
-            href="https://www.facebook.com/"
-            rel="noopener noreferer"
-            class="mobile-social-link"
-          >
-            <svg class="social-network" width="24" height="24">
-              <use href="./images/icons.svg#icon-facebook"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="soc-link-item">
-          <a
-            href="https://www.linkedin.com/"
-            rel="noopener noreferer"
-            class="mobile-social-link"
-          >
-            <svg class="social-network" width="24" height="24">
-              <use href="./images/icons.svg#icon-linkedin"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
+      <div class="mobile-menu-list-container">
+        <ul class="mobile-menu-list">
+          <li class="mobile-menu">
+            <a href="./index.html" class="link current">Studio</a>
+          </li>
+          <li class="mobile-menu">
+            <a href="./portfolio.html" class="link">Portfolio</a>
+          </li>
+          <li class="mobile-menu">
+            <a href="" class="link">Contacts</a>
+          </li>
+        </ul>
+      </div>
+      <div class="mobile-contacts-container">
+        <ul class="mobile-contacts">
+          <li class="mobile-contacts-item">
+            <a href="tel:+110001111111">+11 (000) 111-11-11</a>
+          </li>
+          <li class="mobile-contacts-item">
+            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+        </ul>
+      </div>
+      <div class="mobile-social-list-container">
+        <ul class="mobile-social-list list">
+          <li class="soc-link-item">
+            <a
+              href="https://www.instagram.com/"
+              rel="noopener noreferer"
+              class="mobile-social-link"
+            >
+              <svg class="social-network" width="24" height="24">
+                <use
+                  class="icon"
+                  href="./images/icons.svg#icon-instagram"
+                ></use>
+              </svg>
+            </a>
+          </li>
+          <li class="soc-link-item">
+            <a
+              href="https://twitter.com/"
+              rel="noopener noreferer"
+              class="mobile-social-link"
+            >
+              <svg class="social-network" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="soc-link-item">
+            <a
+              href="https://www.facebook.com/"
+              rel="noopener noreferer"
+              class="mobile-social-link"
+            >
+              <svg class="social-network" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="soc-link-item">
+            <a
+              href="https://www.linkedin.com/"
+              rel="noopener noreferer"
+              class="mobile-social-link"
+            >
+              <svg class="social-network" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
     <script
       defer
