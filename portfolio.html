@@ -18,14 +18,15 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header container">
       <!-- Navigation -->
-      <div class="navigate container">
-        <nav class="top-nav list">
+      <div class="navigate">
+        <div class="header-logo">
           <a href="./index.html" class="web link"
             >Web<span class="studio">Studio</span>
           </a>
-
+        </div>
+        <nav class="top-nav list">
           <ul class="menu list">
             <li class="item">
               <a href="./index.html" class="menu-link link">Studio</a>
@@ -56,6 +57,26 @@
             </li>
           </ul>
         </address>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            class="mobile-menu-open"
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <use href="./images/icons.svg#icon-menu-toggle"></use>
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -315,12 +336,12 @@
       </section>
     </main>
     <!-- Footer -->
-    <footer class="footer-container">
-      <div class="container">
+    <footer class="footer">
+      <div class="container footer-container">
         <div class="footer-logo-container">
           <a class="web-logotype link" href="./index.html"
-            >Web<span class="studio-logo">Studio</span>
-          </a>
+            >Web<span class="footer-logo-two">Studio</span></a
+          >
           <p class="footer-section-description">
             Increase the flow of customers and sales for your business with
             digital marketing & growth solutions.
@@ -329,11 +350,13 @@
         <div class="social-container">
           <p class="social-footer">Social media</p>
           <ul class="social-list-footer list">
-            <li class="soc-link-item">
+            <li class="soc-link-item-foot">
               <a
-                href="https://www.instagram.com/"
-                rel="noopener noreferer"
-                class="social-link-footer"
+                class="social-link-foot link"
+                href="https://instagram.com"
+                target="_blank"
+                rel="nooperer noreferrer"
+                aria-label="Instagram icon"
               >
                 <svg class="social-network" width="24" height="24">
                   <use
@@ -343,33 +366,39 @@
                 </svg>
               </a>
             </li>
-            <li class="soc-link-item">
+            <li class="soc-link-item-foot">
               <a
-                href="https://twitter.com/"
-                rel="noopener noreferer"
-                class="social-link-footer"
+                class="social-link-foot link"
+                href="https://twitter.com"
+                target="_blank"
+                rel="nooperer noreferrer"
+                aria-label="Twitter icon"
               >
                 <svg class="social-network" width="24" height="24">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="soc-link-item">
+            <li class="soc-link-item-foot">
               <a
-                href="https://www.facebook.com/"
-                rel="noopener noreferer"
-                class="social-link-footer"
+                class="social-link-foot link"
+                href="https://facebook.com"
+                target="_blank"
+                rel="nooperer noreferrer"
+                aria-label="Facebook icon"
               >
                 <svg class="social-network" width="24" height="24">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="soc-link-item">
+            <li class="soc-link-item-foot">
               <a
-                href="https://www.linkedin.com/"
-                rel="noopener noreferer"
-                class="social-link-footer"
+                class="social-link-foot link"
+                href="https://linkedin.com"
+                target="_blank"
+                rel="nooperer noreferrer"
+                aria-label="Linkedin icon"
               >
                 <svg class="social-network" width="24" height="24">
                   <use href="./images/icons.svg#icon-linkedin"></use>
@@ -378,19 +407,19 @@
             </li>
           </ul>
         </div>
-        <div class="foter-form-container">
-          <p class="title-form-footer">Subscribe</p>
-          <form class="footer-form" name="footer_form">
+        <div class="form">
+          <p class="social-footer">Subscribe</p>
+          <form class="form-footer">
             <input
-              class="email-input-container"
               type="email"
               name="user_email"
-              id="user-email"
               placeholder="E-mail"
+              class="footer-email"
+              required
+              minlength="2"
             />
-
-            <button type="submit" class="submit-btn-footer">
-              Subscribe<svg class="footer-form-icon" width="24" height="20">
+            <button type="submit" class="footer-btn">
+              Subscribe<svg class="footer-form-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send-btn"></use>
               </svg>
             </button>
@@ -398,5 +427,89 @@
         </div>
       </div>
     </footer>
+    <!-- Mobile-menu -->
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle-close js-close-menu">
+        <svg class="mobile-window-icon-close" width="8" height="8">
+          <use href="./images/icons.svg#icon-close-btn-modal"></use>
+        </svg>
+      </button>
+      <div class="mobile-menu-list-container">
+        <ul class="mobile-menu-list">
+          <li class="mobile-menu">
+            <a href="./index.html" class="link">Studio</a>
+          </li>
+          <li class="mobile-menu">
+            <a href="./portfolio.html" class="link current">Portfolio</a>
+          </li>
+          <li class="mobile-menu">
+            <a href="" class="link">Contacts</a>
+          </li>
+        </ul>
+      </div>
+      <div class="mobile-contacts-container">
+        <ul class="mobile-contacts">
+          <li class="mobile-contacts-item">
+            <a href="tel:+110001111111">+11 (000) 111-11-11</a>
+          </li>
+          <li class="mobile-contacts-item">
+            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+        </ul>
+      </div>
+      <div class="mobile-social-list-container">
+        <ul class="mobile-social-list list">
+          <li class="soc-link-item">
+            <a
+              href="https://www.instagram.com/"
+              rel="noopener noreferer"
+              class="mobile-social-link"
+            >
+              <svg class="social-network" width="24" height="24">
+                <use
+                  class="icon"
+                  href="./images/icons.svg#icon-instagram"
+                ></use>
+              </svg>
+            </a>
+          </li>
+          <li class="soc-link-item">
+            <a
+              href="https://twitter.com/"
+              rel="noopener noreferer"
+              class="mobile-social-link"
+            >
+              <svg class="social-network" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="soc-link-item">
+            <a
+              href="https://www.facebook.com/"
+              rel="noopener noreferer"
+              class="mobile-social-link"
+            >
+              <svg class="social-network" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="soc-link-item">
+            <a
+              href="https://www.linkedin.com/"
+              rel="noopener noreferer"
+              class="mobile-social-link"
+            >
+              <svg class="social-network" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script defer src="./js-script/mobile-menu.js"></script>
   </body>
 </html>
