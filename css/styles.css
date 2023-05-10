@@ -773,12 +773,6 @@ screen and (min-resolution: 2dppx) {
 }
 
 
-
-.img-link {
-    width: 356px;
-}
-
-
 .img-list {
     display: flex;
 }
