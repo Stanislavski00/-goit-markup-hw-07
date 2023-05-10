@@ -1103,24 +1103,6 @@ screen and (min-resolution: 2dppx) {
     color: var(--secondary-text-color-theme-dark);
 }
 
-.footer-email {
-    margin-bottom: 16px;
-    padding: 8px 16px;
-    height: 40px;
-    border-radius: 4px;
-    border: 1px solid var(--primary-text-color-theme-dark);
-    border-radius: 4px;
-    outline: 2px solid transparent;
-    outline-offset: -2px;
-    transition: var(--anim-standart);
-    background-color: var(--primary-text-color-theme-light);
-    color: var(--primary-text-color-theme-dark);
-}
-
-.footer-email:focus {
-    outline-color: var(--primary-text-color-theme-dark);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-}
 
 .footer-btn {
     display: flex;
@@ -1152,6 +1134,26 @@ screen and (min-resolution: 2dppx) {
 .footer-form-icon{
     fill: var(--primary-text-color-theme-dark);
 }
+
+.footer-email {
+    margin-bottom: 16px;
+    padding: 8px 16px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid var(--primary-text-color-theme-dark);
+    border-radius: 4px;
+    outline: 2px solid transparent;
+    outline-offset: -2px;
+    transition: var(--anim-standart);
+    background-color: var(--primary-text-color-theme-light);
+    color: var(--primary-text-color-theme-dark);
+}
+
+.footer-email:focus {
+    outline-color: var(--primary-text-color-theme-dark);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+
 
 @media only screen and (max-width: 767px) {
     .footer-email {
