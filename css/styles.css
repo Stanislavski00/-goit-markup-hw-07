@@ -1119,7 +1119,7 @@ screen and (min-resolution: 2dppx) {
 
 .footer-email:focus {
     outline-color: var(--primary-text-color-theme-dark);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15))
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
 .footer-btn {
