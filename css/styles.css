@@ -42,7 +42,6 @@ img {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 2px solid red;
     overflow-x: auto;
 }
 
@@ -914,7 +913,6 @@ screen and (min-resolution: 2dppx) {
     margin-left: auto;
     gap: 72px 16px;
     justify-content: center;
-    /* height: 88px; */
 }
 
 /* tablet */
@@ -937,14 +935,30 @@ screen and (min-resolution: 2dppx) {
 
 .customers-link {
     display: flex;
-    width: 100%;
-    height: 100%;
+    width: 190px;
+    height: 88px;
     border: 1px solid #8e8f99;
     border-radius: 4px;
     align-items: center;
     justify-content: center;
     color: #8e8f99;
     transition: color var(--anim-standart), border-color var(--anim-standart);
+}
+
+/* tablet */
+
+@media only screen and (min-width: 768px) {
+  .customers-link {
+    width: 168px;
+  }
+}
+
+/* desctop */
+
+@media only screen and (min-width: 1158px) {
+    .customers-link {
+        width: 168px;
+    }
 }
 
 .customers-link:hover,
@@ -1345,6 +1359,13 @@ screen and (min-resolution: 2dppx) {
         color: var(--secondary-accent-color);
 }
 
+@media only screen and (max-width: 427px) {
+  .mobile-contacts-item {
+    font-size: 28px;
+  }
+}
+
+
 .mobile-contacts-item:nth-child(2){
     font-family: var(--prymary-font);
         font-style: normal;
@@ -1714,6 +1735,7 @@ textarea {
     position: relative;
     overflow: hidden;
 }
+
 
 
 .overlay {
