@@ -21,14 +21,12 @@
   <body>
     <!-- Site header -->
 
-    <header class="header container">
+    <header class="header">
       <!-- Navigation -->
-      <div class="navigate">
-        <div class="header-logo">
-          <a href="./index.html" class="web link"
-            >Web<span class="studio">Studio</span>
-          </a>
-        </div>
+      <div class="navigate container">
+        <a href="./index.html" class="web link"
+          >Web<span class="studio">Studio</span>
+        </a>
         <nav class="top-nav list">
           <ul class="menu list">
             <li class="item">
@@ -59,23 +57,12 @@
           </ul>
         </address>
         <button
-          class="menu-toggle js-open-menu"
+          class="menu-toggle-open js-open-menu"
           aria-expanded="false"
           aria-controls="mobile-menu"
         >
-          <svg
-            class="mobile-menu-open"
-            width="24"
-            height="24"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-          >
-            <use href="./images/icons.svg#icon-menu-toggle"></use>
-            <path
-              fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
-            ></path>
+          <svg class="mobile-menu-open" width="28" height="18">
+            <use href="./images/icons.svg#icon-Vector"></use>
           </svg>
         </button>
       </div>
@@ -98,7 +85,7 @@
         <div class="feature-container container">
           <h2 class="visually-hidden">Feature</h2>
           <ul class="feature-list list">
-            <li class="item">
+            <li class="feature-item item">
               <div class="icon-container">
                 <svg class="feature-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-antenna"></use>
@@ -111,7 +98,7 @@
               </p>
             </li>
 
-            <li class="item">
+            <li class="feature-item item">
               <div class="icon-container">
                 <svg class="feature-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-clock"></use>
@@ -124,7 +111,7 @@
               </p>
             </li>
 
-            <li class="item">
+            <li class="feature-item item">
               <div class="icon-container">
                 <svg class="feature-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-diagram"></use>
@@ -137,7 +124,7 @@
               </p>
             </li>
 
-            <li class="item">
+            <li class="feature-item item">
               <div class="icon-container">
                 <svg class="feature-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-astronaut"></use>
@@ -162,11 +149,11 @@
             <li class="img-link list">
               <img
                 srcset="
-                  ./images/ourwork/imgone.jpg,
-                  ./images/ourwork/imgone-2x.jpg
+                  ./images/ourwork/imgone@1x.jpg 1x,
+                  ./images/ourwork/imgone@2x.jpg 2x
                 "
                 class="img-item link"
-                src="./images/ourwork/imgone.jpg"
+                src="./images/ourwork/imgone@1x.jpg"
                 alt="what we do"
                 width="360"
                 height="300"
@@ -177,11 +164,11 @@
             <li class="img-link list">
               <img
                 srcset="
-                  ./images/ourwork/imgtwo.jpg,
-                  ./images/ourwork/imgtwo-2x.jpg
+                  ./images/ourwork/imgtwo@1x.jpg 1x,
+                  ./images/ourwork/imgtwo@2x.jpg 2x
                 "
                 class="img-item link"
-                src="./images/ourwork/imgtwo.jpg"
+                src="./images/ourwork/imgtwo@1x.jpg"
                 alt="what we do"
                 width="360"
                 height="300"
@@ -192,11 +179,11 @@
             <li class="img-link list">
               <img
                 srcset="
-                  ./images/ourwork/imgthree.jpg,
-                  ./images/ourwork/imgthree-2x.jpg
+                  ./images/ourwork/imgthree@1x.jpg 1x,
+                  ./images/ourwork/imgthree@2x.jpg 2x
                 "
                 class="img-item link"
-                src="./images/ourwork/imgthree.jpg"
+                src="./images/ourwork/imgthree@1x.jpg"
                 alt="what we do"
                 width="360"
                 height="300"
@@ -214,13 +201,39 @@
           <h2 class="subtitle">Our Team</h2>
           <ul class="team-list list">
             <li class="item">
-              <img
-                srcset="./images/staff/foto1-2x.jpg"
-                src="./images/staff/foto1.jpg"
-                alt="staff photo"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="
+                    ./images/staff/foto1-@1x.jpg 1x,
+                    ./images/staff/foto1-@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/staff/foto1-@1x.jpg 1x,
+                    ./images/staff/foto1-@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/staff/foto1-@1x.jpg 1x,
+                    ./images/staff/foto1-@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/staff/foto1-@1x.jpg"
+                  alt="Product designer photo"
+                  width="264"
+                  height="260"
+                  loading="lazy"
+                />
+              </picture>
               <div class="team-container">
                 <h3 class="headline">Mark Guerrero</h3>
                 <p class="section-description">Product Designer</p>
@@ -278,13 +291,39 @@
             </li>
 
             <li class="item">
-              <img
-                srcset="./images/staff/foto2-2x.jpg"
-                src="./images/staff/foto2.jpg"
-                alt="staff photo"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="
+                    ./images/staff/foto2-@1x.jpg 1x,
+                    ./images/staff/foto2-@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/staff/foto2-@1x.jpg 1x,
+                    ./images/staff/foto2-@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/staff/foto2-@1x.jpg 1x,
+                    ./images/staff/foto2-@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/staff/foto2-@1x.jpg"
+                  alt="Product designer photo"
+                  width="264"
+                  height="260"
+                  loading="lazy"
+                />
+              </picture>
               <div class="team-container">
                 <h3 class="headline">Tom Ford</h3>
                 <p class="section-description">Frontend Developer</p>
@@ -342,13 +381,39 @@
             </li>
 
             <li class="item">
-              <img
-                srcset="./images/staff/foto3-2x.jpg"
-                src="./images/staff/foto3.jpg"
-                alt="staff photo"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="
+                    ./images/staff/foto3-@1x.jpg 1x,
+                    ./images/staff/foto3-@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/staff/foto3-@1x.jpg 1x,
+                    ./images/staff/foto3-@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/staff/foto3-@1x.jpg 1x,
+                    ./images/staff/foto3-@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/staff/foto3-@1x.jpg"
+                  alt="Product designer photo"
+                  width="264"
+                  height="260"
+                  loading="lazy"
+                />
+              </picture>
               <div class="team-container">
                 <h3 class="headline">Camila Garcia</h3>
                 <p class="section-description">Marketing</p>
@@ -406,13 +471,39 @@
             </li>
 
             <li class="item">
-              <img
-                srcset="./images/staff/foto4-2x.jpg"
-                src="./images/staff/foto4.jpg"
-                alt="staff photo"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="
+                    ./images/staff/foto4-@1x.jpg 1x,
+                    ./images/staff/foto4-@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/staff/foto4-@1x.jpg 1x,
+                    ./images/staff/foto4-@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/staff/foto4-@1x.jpg 1x,
+                    ./images/staff/foto4-@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/staff/foto4-@1x.jpg"
+                  alt="Product designer photo"
+                  width="264"
+                  height="260"
+                  loading="lazy"
+                />
+              </picture>
               <div class="team-container">
                 <h3 class="headline">Daniel Wilson</h3>
                 <p class="section-description">UI Designer</p>
