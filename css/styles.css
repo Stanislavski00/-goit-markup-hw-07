@@ -848,6 +848,7 @@ screen and (min-resolution: 2dppx) {
 @media only screen and (min-width: 1158px) {
     .team-list {
         gap: 24px;
+        width: 100%;
     }
 }
 
@@ -938,6 +939,7 @@ screen and (min-resolution: 2dppx) {
   .customers-list {
     gap: 72px 24px;
     justify-content: center;
+    max-width: 582px;
   }
 }
 
@@ -1241,6 +1243,7 @@ screen and (min-resolution: 2dppx) {
         display: flex;
         align-items: baseline;
         gap: 0;
+        width: 100%;
 
     }
 
@@ -1751,7 +1754,7 @@ textarea {
 
 @media only screen and (min-width: 768px) {
   .image-list {
-    justify-content: start;
+    justify-content: center;
     gap: 72px 24px;
   }
 }
