@@ -50,7 +50,8 @@ img {
 
 @media only screen and (min-width: 768px) {
   .container {
-    max-width: 100%;
+    max-width: 768px;
+    overflow-x: hidden;
   }
 }
 
@@ -644,10 +645,14 @@ screen and (min-resolution: 2dppx) {
 }
 
 .feature-item{
-    
-    
     max-width: 396px;
     max-height: 312px;
+}
+
+@media only screen and (min-width: 768px) {
+  .feature-item {
+    max-width: 356px;
+  }
 }
 
 @media only screen and (min-width: 1158px) {
@@ -812,6 +817,12 @@ screen and (min-resolution: 2dppx) {
   }
 }
 
+@media only screen and (min-width: 1158px) {
+    .team {
+        padding: 120px 0 120px;
+    }
+}
+
 .team .item {
     min-width: 264px;
     background-color: var(--primary-text-color-theme-dark);
@@ -913,9 +924,18 @@ screen and (min-resolution: 2dppx) {
 
 /* ================== Customers =================== */
 
-.customers {
-    padding-top: 120px;
-    padding-bottom: 120px;
+
+.customers{
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+
+@media only screen and (min-width: 1158px) {
+  .customers {
+      padding-top: 120px;
+      padding-bottom: 120px;
+  }
 }
 
 .customers .subtitle {
@@ -949,6 +969,7 @@ screen and (min-resolution: 2dppx) {
     .customers-list {
         flex-wrap: nowrap;
         gap: 24px;
+        max-width: 100%;
     }
 }
 
